@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Frog } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 
@@ -20,10 +19,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-green-100 to-green-300">
       <header className="py-6 bg-green-500 text-white">
         <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center">
-            <Frog className="h-8 w-8 mr-2" />
-            <h1 className="text-2xl font-bold">Frog World</h1>
-          </div>
+          <h1 className="text-2xl font-bold">Frog World</h1>
           <nav>
             <ul className="flex space-x-4">
               <li><a href="#about" className="hover:underline">About</a></li>
@@ -52,7 +48,6 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {frogFacts.map((fact, index) => (
               <Alert key={index}>
-                <Frog className="h-4 w-4" />
                 <AlertTitle>Did you know?</AlertTitle>
                 <AlertDescription>{fact}</AlertDescription>
               </Alert>

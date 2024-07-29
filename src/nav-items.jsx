@@ -1,4 +1,3 @@
-import { Frog } from "lucide-react";
 import Index from "./pages/Index.jsx";
 
 /**
@@ -8,7 +7,6 @@ export const navItems = [
   {
     title: "Home",
     to: "/",
-    icon: <Frog className="h-4 w-4" />,
     page: <Index />,
   },
 ];
